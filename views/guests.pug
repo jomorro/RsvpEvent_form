@@ -1,0 +1,16 @@
+doctype
+html
+    head
+        title= title
+    body
+        h1= h1
+
+        h2= "Attending"
+            ul
+                each val in attending
+                    li= val
+
+        h2= "Not Attending"
+            ul
+                each val in notAttending
+                    li= val
