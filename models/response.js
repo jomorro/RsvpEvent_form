@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const validator = require("validator");
+const Schema = mongoose.Schema;
 
 const ResponseSchema = new mongoose.Schema({
   name: {
@@ -23,7 +24,7 @@ const ResponseSchema = new mongoose.Schema({
     type: Boolean,
     required: true
   },
-  questCount: {
+  guestCount: {
     type: Number,
     required: true,
     min: 1,
